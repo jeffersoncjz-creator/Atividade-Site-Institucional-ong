@@ -1,0 +1,375 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #fff;
+  color: #303a36;
+  line-height: 1.6;
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+.largura {
+  width: 90%;
+  max-width: 1150px;
+  margin: auto;
+}
+.cabecalho {
+  background: white;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  box-shadow: 0 2px 12px #00000012;
+}
+.barra {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 84px;
+  gap: 25px;
+}
+.logo {
+  color: #18775b;
+  font-size: 25px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  line-height: 1.1;
+}
+.logo small {
+  display: block;
+  font-size: 13px;
+  color: #e58b43;
+  letter-spacing: 1px;
+}
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 22px;
+}
+nav a {
+  color: #35443d;
+  font-size: 14px;
+  font-weight: bold;
+}
+nav a:hover,
+.pet a:hover {
+  color: #e58b43;
+}
+.banner {
+  background: #fff3e6;
+}
+.banner-conteudo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 35px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.banner img {
+  width: 100%;
+  border-radius: 30px;
+}
+.etiqueta {
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: #db8642;
+  margin-bottom: 12px;
+}
+h1 {
+  font-size: 49px;
+  line-height: 1.16;
+  margin-bottom: 20px;
+  color: #244e3f;
+}
+h1 span {
+  color: #df8948;
+}
+.banner-texto > p:not(.etiqueta) {
+  font-size: 17px;
+  max-width: 500px;
+  margin-bottom: 28px;
+}
+.botao {
+  display: inline-block;
+  background: #167758;
+  color: white;
+  padding: 13px 23px;
+  border-radius: 30px;
+  font-weight: bold;
+}
+.botao:hover {
+  background: #105b43;
+}
+.secao {
+  padding-top: 76px;
+  padding-bottom: 76px;
+  scroll-margin-top: 100px;
+}
+h2 {
+  font-size: 35px;
+  color: #244e3f;
+  line-height: 1.2;
+  margin-bottom: 15px;
+}
+.introducao {
+  max-width: 700px;
+  margin-bottom: 30px;
+  color: #64716b;
+}
+.tres-colunas {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+.quatro-colunas {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+.fundo-claro {
+  background: #f4f8f5;
+}
+.cartao {
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 5px 20px #1d46310e;
+}
+.informativo {
+  padding: 28px;
+  border: 1px solid #e8efea;
+}
+.emoji {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+h3 {
+  color: #254d3e;
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+.cartao p,
+.passos p {
+  color: #66736c;
+  font-size: 15px;
+}
+.pet img,
+.projeto img {
+  width: 100%;
+  height: 205px;
+  object-fit: cover;
+}
+.conteudo-cartao {
+  padding: 19px;
+}
+.pet a {
+  display: inline-block;
+  color: #167758;
+  font-weight: bold;
+  margin-top: 12px;
+}
+.passos article {
+  background: white;
+  padding: 28px;
+  border-radius: 15px;
+}
+.passos strong {
+  font-size: 38px;
+  color: #df8948;
+}
+.aviso {
+  font-size: 13px;
+  margin-top: 25px;
+  color: #6d7771;
+}
+.contato {
+  background: #18775b;
+  color: white;
+  padding: 65px 0;
+  text-align: center;
+  scroll-margin-top: 100px;
+}
+.contato h2 {
+  color: white;
+}
+.contato .etiqueta {
+  color: #f6d1a6;
+}
+.contato p {
+  margin-bottom: 12px;
+}
+.contato .aviso {
+  color: #e2f1e9;
+}
+.botao-claro {
+  background: white;
+  color: #18775b;
+  margin-top: 14px;
+}
+.botao-claro:hover {
+  background: #f4e9da;
+}
+footer {
+  background: #153c2e;
+  color: white;
+  padding: 24px 0;
+  text-align: center;
+  font-size: 13px;
+}
+/* Celular - até 767px */
+@media (max-width: 767px) {
+  .barra {
+    flex-direction: column;
+    padding: 15px 0;
+    gap: 12px;
+  }
+  nav {
+    justify-content: center;
+    gap: 10px 15px;
+  }
+  nav a {
+    font-size: 12px;
+  }
+  .banner-conteudo {
+    grid-template-columns: 1fr;
+    padding-top: 45px;
+  }
+  h1 {
+    font-size: 35px;
+  }
+  h2 {
+    font-size: 27px;
+  }
+  .secao {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .tres-colunas,
+  .quatro-colunas {
+    grid-template-columns: 1fr;
+  }
+  .pet img,
+  .projeto img {
+    height: 250px;
+  }
+}
+/* Tablet - 768px até 1023px */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .barra {
+    flex-direction: column;
+    padding: 16px 0;
+  }
+  .banner-conteudo {
+    grid-template-columns: 1fr 1fr;
+  }
+  h1 {
+    font-size: 36px;
+  }
+  .tres-colunas,
+  .quatro-colunas {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+/* Computador - a partir de 1024px */
+@media (min-width: 1024px) {
+  .tres-colunas {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .quatro-colunas {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* Carrossel do banner: 4 imagens, uma de cada vez, troca a cada 4 segundos */
+.carrossel {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 700 / 540;
+  overflow: hidden;
+  border-radius: 30px;
+  background: #fbe4d0;
+}
+.carrossel .slide {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0;
+  opacity: 0;
+  animation: trocar-pet 16s infinite;
+}
+.carrossel .slide1 {
+  animation-delay: 0s;
+}
+.carrossel .slide2 {
+  animation-delay: -12s;
+}
+.carrossel .slide3 {
+  animation-delay: -8s;
+}
+.carrossel .slide4 {
+  animation-delay: -4s;
+}
+@keyframes trocar-pet {
+  0%,
+  22% {
+    opacity: 1;
+  }
+  25%,
+  97% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.carrossel-legenda {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 12px;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  background: #153c2ec9;
+  z-index: 2;
+}
+@media (prefers-reduced-motion: reduce) {
+  .carrossel .slide {
+    animation: none;
+    opacity: 0;
+  }
+  .carrossel .slide1 {
+    opacity: 1;
+  }
+}
+/* Vídeo local no cartão Saúde e cuidados */
+.projeto .video-projeto {
+  display: block;
+  width: 100%;
+  height: 205px;
+  object-fit: cover;
+  background: #111;
+}
+@media (max-width: 767px) {
+  .projeto .video-projeto {
+    height: 250px;
+  }
+}

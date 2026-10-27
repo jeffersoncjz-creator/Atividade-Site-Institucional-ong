@@ -1,0 +1,15 @@
+Objetivo: Desenvolver o site institucional para uma ONG fictícia (vocês têm liberdade para escolher a causa e o nome da organização).
+
+Requisitos técnicos:
+HTML5 Semântico: Utilizar as tags corretas para estruturar o conteúdo.
+CSS3 e Design Responsivo: O site deve ser adaptável a diferentes telas (celular, tablet e desktop) utilizando (@media).
+Organização de Arquivos: Todas as mídias (fotos, vídeos, ícones) devem ser baixadas e salvas localmente em pastas organizadas dentro do diretório do projeto (ex: /imagens, /videos). Não utilizar links externos, apenas para vídeos do Youtube(Função de incorporar vídeo).
+Estilização: Aplicar um CSS bem estruturado, com boa escolha de cores, tipografia e layout visualmente agradável.
+Requisitos de conteúdo:
+Barra de Navegação (Navbar): Fixa ou superior, contendo links para as seções do site (ex: Início, Sobre Nós, Nossos Projetos, Como Doar, Contato).
+Galeria/Portfólio: Incluir fotos dos "trabalhos fictícios" realizados pela ONG.
+Seções Institucionais: Páginas ou seções claras explicando a causa, a equipe ("Sobre Nós") e instruções de como contribuir ("Como Doar").
+
+
+
+Projeto acadêmico fictício - Patinhas de Cajazeiras
